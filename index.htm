@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: solid-black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<div style="text-align:center">
+<h1>Adam Troxell</h1>
+
+<p>&#128205;West Fargo, ND, US &#128231;<a href = "mailto: adamtxl@hotmail.com">adamtxl@hotmail.com</a> &#128241; <a href="tel:7012000150">(701) 200-0150</a>
+</p>
+</div>
+
+<p style="font-family:Courier; color:Grey; font-size: 30px;">
+<b>Summary</b>
+</p>
+<hr>
+<p style="font-family:Courier; color:black; font-size: 14px;">
+Solutions Manager with 12 years of experience in developing and implementing innovative solutions to increase operational efficiency.
+Proven ability to lead teams, manage projects, and drive process improvement initiatives. Experienced in developing strategies to increase
+profitability, brand visibility, and customer satisfaction. </p>
+<hr>
+<p style="font-family:Courier; color:Grey; font-size: 30px;">
+<b>Experience</b>
+</p>
+<div class="tab">
+  <button class="tablinks" onclick="openTitle(event, 'Solutions Manager')">*Solutions Manager*</button>
+  <button class="tablinks" onclick="openTitle(event, 'Customer Coordinator')">*Customer Coordinator*</button>
+  <button class="tablinks" onclick="openTitle(event, 'Technical Support')">*Technical Support*</button>
+</div>
+
+<div id="Solutions Manager" class="tabcontent">
+  <h3>Solutions Manager</h3>
+  <p><li>Work with customers and developers to find Sustainable and reusable solutions to problems.</li>
+<li>Defined metrics, data collection, and analysis tools for a SaaS Product to achieve OKRs.</li>
+<li>Increased customer satisfaction by consistently responding to client requests within 24 hours, and sharing information about the status of
+the project with the client.</li>
+<li>Developed sustainable and reusable solutions for customer problems and increased customer satisfaction by responding quickly and
+addressing issues openly, resulting in increased sales of 25%. </li>
+<li>Created internal tools to support OKRs and objectives, which drove team
+productivity and improved organizational efficiency by 18%.</li></p>
+</div>
+
+<div id="Customer Coordinator" class="tabcontent">
+  <h3>Customer Coordinator</h3>
+  <p><li> Worked with customers to define and vet issues, prioritize updates, and change metrics to meet customer requirements for a newly released
+product, by working closely with the development team.</li>
+<li>Managed the onboarding process for 10 new customers, ensuring that the transition was as smooth as possible by providing thorough
+feedback, which resulted in zero customer complaints.</li>
+<li>Successfully onboarded 20 customers with a 97% satisfaction rate and reduced onboarding time by 30%, allowing for faster customer
+activation and improved customer service.</li></p>
+</div>
+
+<div id="Technical Support" class="tabcontent">
+  <h3>Technical Support</h3>
+  <p><li>Receive incoming Customer calls and emails regarding Flexmls products and general technical support</li>
+ <li>Documented 60 Flexmls processes in the forums, resulting in a 25% decrease in duplicate tickets.</li>
+<li>Exceeded monthly call handling goal by 15% by quickly and effectively responding to customer inquiries</li>
+<li>Liaised between customers and development teams to resolve bugs by prioritizing the most important issues and communicating clearly
+with the development team.</li></p>
+</div>
+
+<p style="font-family:Courier; color:Grey; font-size: 30px;">
+<b>Education</b>
+</p>
+<p style="font-family:Courier; color:black; font-size: 14px;">
+<b>Associate of Information Technology</b></br>
+Rasmussen University - Fargo, ND - 2011 </p>
+
+<p style="font-family:Courier; color:Grey; font-size: 30px;">
+<b>Certifications</b>
+</p>
+<p style="font-family:Courier; color:black; font-size: 14px;">
+<b>Product Owner (CSPO)</b></br>
+Scrum.org - 2021 </p>
+
+<p style="font-family:Courier; color:Grey; font-size: 30px;">
+<b>Skills</b>
+</p>
+<p style="font-family:Courier; color:black; font-size: 14px;">
+Soft Skills: Customer Success, Integrations, Solutions, Technology Consultation</br>
+Technical Skills: Jira, Confluence, HTML   </p>
+
+
+<script>
+function openTitle(evt, titleName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(titleName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html>
+
