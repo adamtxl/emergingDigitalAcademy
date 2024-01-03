@@ -7,8 +7,16 @@ h3 {
   font-size: 24px;
 }
 
+.bigtitle {
+  font-family:Courier; color:Grey; font-size: 30px;
+}
+
 .title {
   font-family:Courier; color:black; font-size: 24px;
+}
+
+.bodystyle {
+  font-family:Courier; color:black; font-size: 14px;
 }
 
 <style>
